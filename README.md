@@ -96,11 +96,11 @@
     // Datos de los jugadores
     const jugadores = [
       { nombre: "Yasiel", mmr: 4115 },
-      { nombre: "Kiba", mmr: 3900 },
+      { nombre: "Kiba", mmr: 3911 },
       { nombre: "Manguito", mmr: 4206 },
-      { nombre: "Holantau", mmr: 3770 },
+      { nombre: "Holantau", mmr: 3785 },
       { nombre: "Adriel", mmr: 4870 },
-      { nombre: "Joseph", mmr: 3344 },
+      { nombre: "Joseph", mmr: 3311 },
       { nombre: "Fujimori", mmr: 3493 },
       { nombre: "Wyldtrak", mmr: 3330 },
       { nombre: "Vega", mmr: 3850 },
