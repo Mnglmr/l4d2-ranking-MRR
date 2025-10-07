@@ -98,7 +98,7 @@
       { nombre: "Yasiel", mmr: 4174 },
       { nombre: "Kiba", mmr: 3856 },
       { nombre: "Manguito", mmr: 4196 },
-      { nombre: "Holantau", mmr: 3798 },
+      { nombre: "Holantau", mmr: 3808 },
       { nombre: "Adriel", mmr: 4908 },
       { nombre: "Joseph", mmr: 3273 },
       { nombre: "Fujimori", mmr: 3549 },
@@ -106,7 +106,7 @@
       { nombre: "Vega", mmr: 3850 },
       { nombre: "Minyato", mmr: 4819 },
       { nombre: "Lala", mmr: 5855 },
-       { nombre: "Yorka", mmr: 3684 },
+       { nombre: "Yorka", mmr: 3659 },
     ];
 
     // Ordenar por MMR (de mayor a menor)
