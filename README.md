@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #1b1b1b;       /* fondo general oscuro */
+      background-color: #1b1b1b;   /* Fondo general oscuro */
       color: #f0f0f0;
       margin: 0;
       padding: 0;
@@ -26,7 +26,7 @@
     main {
       max-width: 900px;
       margin: 30px auto;
-      background: #ffffff;             /* fondo de la tabla en blanco */
+      background: #ffffff;          /* Fondo blanco para la tabla */
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.7);
@@ -34,7 +34,7 @@
 
     h2 {
       text-align: center;
-      color: #000000;                  /* título en negro */
+      color: #000000;               /* Título en negro */
     }
 
     table {
@@ -42,47 +42,4 @@
       border-collapse: collapse;
       margin-top: 10px;
       text-align: center;
-      background: #ffffff;             /* tabla en blanco */
-      color: #000000;                   /* texto de la tabla en negro */
-    }
-
-    th, td {
-      padding: 12px;
-      border-bottom: 1px solid #444;
-      color: #000000;                   /* texto de celdas en negro */
-    }
-
-    th {
-      background: #16a085;
-      color: #ffffff;                   /* encabezados en blanco sobre fondo verde */
-      font-size: 1.1em;
-    }
-
-    tr:hover {
-      background: #e6e6e6;              /* color suave al pasar el mouse */
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-      color: #888;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
-
-  <header>Sistema de MMR - Left 4 Dead 2</header>
-
-  <main>
-    <h2>Clasificación de Jugadores</h2>
-    <table id="mmrTable">
-      <thead>
-        <tr>
-          <th>Jugador</th>
-          <th>MMR</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Las filas se insertan desde JavaScript -->
+      background: #ffffff;
