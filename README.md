@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -31,6 +32,11 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.7);
     }
 
+    h2 {
+      text-align: center;
+      color: #fff;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -51,12 +57,6 @@
 
     tr:hover {
       background: #3b3b3b;
-    }
-
-    .highlight {
-      background: #f1c40f;
-      color: #000;
-      font-weight: bold;
     }
 
     footer {
@@ -82,7 +82,7 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Datos serán insertados por JavaScript -->
+        <!-- Las filas se insertan desde JavaScript -->
       </tbody>
     </table>
   </main>
@@ -90,7 +90,7 @@
   <footer>© 2025 Sistema MMR L4D2 - Fan Project</footer>
 
   <script>
-    // Datos del MMR
+    // Datos de los jugadores
     const jugadores = [
       { nombre: "Yasiel", mmr: 4115 },
       { nombre: "Kiba", mmr: 3900 },
@@ -105,27 +105,21 @@
       { nombre: "Lala", mmr: 5855 },
     ];
 
-    // Ordenar por MMR descendente
+    // Ordenar por MMR (descendente)
     jugadores.sort((a, b) => b.mmr - a.mmr);
 
-    // Insertar en la tabla
+    // Insertar los datos en la tabla
     const tbody = document.querySelector("#mmrTable tbody");
 
-    jugadores.forEach((jugador, index) => {
+    jugadores.forEach((jugador) => {
       const row = document.createElement("tr");
-
-      // Resaltar el mayor MMR
-      if (index === 0) {
-        row.classList.add("highlight");
-      }
-
       row.innerHTML = `
         <td>${jugador.nombre}</td>
         <td>${jugador.mmr}</td>
       `;
-
       tbody.appendChild(row);
     });
   </script>
 </body>
 </html>
+
