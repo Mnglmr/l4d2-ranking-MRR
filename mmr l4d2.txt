@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de MMR - L4D2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1b1b1b;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #27ae60;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #444;
+    }
+
+    th {
+      background: #16a085;
+      color: white;
+      font-size: 1.1em;
+    }
+
+    tr:hover {
+      background: #3b3b3b;
+    }
+
+    .highlight {
+      background: #f1c40f;
+      color: #000;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Sistema de MMR - Left 4 Dead 2</header>
+
+  <main>
+    <h2>Clasificación de Jugadores</h2>
+    <table id="mmrTable">
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th>MMR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Datos serán insertados por JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>© 2025 Sistema MMR L4D2 - Fan Project</footer>
+
+  <script>
+    // Datos del MMR
+    const jugadores = [
+      { nombre: "Yasiel", mmr: 4115 },
+      { nombre: "Kiba", mmr: 3900 },
+      { nombre: "Manguito", mmr: 4206 },
+      { nombre: "Holantau", mmr: 3770 },
+      { nombre: "Adriel", mmr: 4870 },
+      { nombre: "Joseph", mmr: 3344 },
+      { nombre: "Fujimori", mmr: 3493 },
+      { nombre: "Wyldtrak", mmr: 3330 },
+      { nombre: "Vega", mmr: 3850 },
+      { nombre: "Minyato", mmr: 4819 },
+      { nombre: "Lala", mmr: 5855 },
+    ];
+
+    // Ordenar por MMR descendente
+    jugadores.sort((a, b) => b.mmr - a.mmr);
+
+    // Insertar en la tabla
+    const tbody = document.querySelector("#mmrTable tbody");
+
+    jugadores.forEach((jugador, index) => {
+      const row = document.createElement("tr");
+
+      // Resaltar el mayor MMR
+      if (index === 0) {
+        row.classList.add("highlight");
+      }
+
+      row.innerHTML = `
+        <td>${jugador.nombre}</td>
+        <td>${jugador.mmr}</td>
+      `;
+
+      tbody.appendChild(row);
+    });
+  </script>
+</body>
+</html>
