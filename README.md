@@ -42,4 +42,87 @@
       border-collapse: collapse;
       margin-top: 10px;
       text-align: center;
-      background: #ffffff;
+      background: #ffffff;          /* Fondo de tabla blanco */
+      color: #000000;               /* Texto de la tabla en negro */
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #444;
+      color: #000000;               /* Texto negro en las celdas */
+    }
+
+    th {
+      background: #16a085;          /* Fondo verde para el encabezado */
+      color: #ffffff;               /* Texto blanco para los encabezados */
+      font-size: 1.1em;
+    }
+
+    tr:hover {
+      background: #e6e6e6;          /* Efecto hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Sistema de MMR - Left 4 Dead 2</header>
+
+  <main>
+    <h2>Clasificación de Jugadores</h2>
+    <table id="mmrTable">
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th>MMR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Las filas se insertarán aquí mediante JavaScript -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>© 2025 Sistema MMR L4D2 - Fan Project</footer>
+
+  <script>
+    // Datos de los jugadores
+    const jugadores = [
+      { nombre: "Yasiel", mmr: 4115 },
+      { nombre: "Kiba", mmr: 3900 },
+      { nombre: "Manguito", mmr: 4206 },
+      { nombre: "Holantau", mmr: 3770 },
+      { nombre: "Adriel", mmr: 4870 },
+      { nombre: "Joseph", mmr: 3344 },
+      { nombre: "Fujimori", mmr: 3493 },
+      { nombre: "Wyldtrak", mmr: 3330 },
+      { nombre: "Vega", mmr: 3850 },
+      { nombre: "Minyato", mmr: 4819 },
+      { nombre: "Lala", mmr: 5855 },
+    ];
+
+    // Ordenar por MMR (de mayor a menor)
+    jugadores.sort((a, b) => b.mmr - a.mmr);
+
+    // Insertar los datos en la tabla
+    const tbody = document.querySelector("#mmrTable tbody");
+
+    jugadores.forEach((jugador) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${jugador.nombre}</td>
+        <td>${jugador.mmr}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  </script>
+
+</body>
+</html>
