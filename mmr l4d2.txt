@@ -59,13 +59,6 @@
       background: #3b3b3b;
     }
 
-    /* Resalta el Top 1 */
-    .highlight {
-      background: #f1c40f;
-      color: #000;
-      font-weight: bold;
-    }
-
     footer {
       text-align: center;
       padding: 10px;
@@ -118,19 +111,12 @@
     // Insertar los datos en la tabla
     const tbody = document.querySelector("#mmrTable tbody");
 
-    jugadores.forEach((jugador, index) => {
+    jugadores.forEach((jugador) => {
       const row = document.createElement("tr");
-
-      // Solo el Top 1 queda destacado
-      if (index === 0) {
-        row.classList.add("highlight");
-      }
-
       row.innerHTML = `
         <td>${jugador.nombre}</td>
         <td>${jugador.mmr}</td>
       `;
-
       tbody.appendChild(row);
     });
   </script>
