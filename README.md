@@ -106,6 +106,7 @@
       { nombre: "Vega", mmr: 3850 },
       { nombre: "Minyato", mmr: 4819 },
       { nombre: "Lala", mmr: 5855 },
+       { nombre: "Yorka", mmr: 3684 },
     ];
 
     // Ordenar por MMR (de mayor a menor)
