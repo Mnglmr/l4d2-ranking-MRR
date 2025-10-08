@@ -100,7 +100,7 @@
       { nombre: "Manguito", mmr: 4196 },
       { nombre: "Holantau", mmr: 3808 },
       { nombre: "Adriel", mmr: 4908 },
-      { nombre: "Joseph", mmr: 3254 },
+      { nombre: "Joseph", mmr: 3216 },
       { nombre: "Fujimori", mmr: 3549 },
       { nombre: "Wyldtrak", mmr: 3330 },
       { nombre: "Vega", mmr: 3850 },
@@ -127,4 +127,3 @@
 
 </body>
 </html>
-
