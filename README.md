@@ -95,13 +95,13 @@
   <script>
     // Datos de los jugadores
     const jugadores = [
-      { nombre: "Yasiel", mmr: 4226 },
-      { nombre: "Kiba", mmr: 3916 },
-      { nombre: "Manguito", mmr: 4149 },
-      { nombre: "Holantau", mmr: 3742 },
-      { nombre: "Adriel", mmr: 4877 },
+      { nombre: "Yasiel", mmr: 4198 },
+      { nombre: "Kiba", mmr: 3960 },
+      { nombre: "Manguito", mmr: 4114 },
+      { nombre: "Holantau", mmr: 3717 },
+      { nombre: "Adriel", mmr: 4902 },
       { nombre: "Joseph", mmr: 3176 },
-      { nombre: "Fujimori", mmr: 3617 },
+      { nombre: "Fujimori", mmr: 3651 },
       { nombre: "Wyldtrak", mmr: 3330 },
       { nombre: "Vega", mmr: 3850 },
       { nombre: "Minyato", mmr: 4854 },
@@ -127,3 +127,5 @@
 
 </body>
 </html>
+
+
